@@ -30,9 +30,9 @@ if (typeof window !== 'undefined') {
 var isIosDevice = typeof window !== 'undefined' && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
 
 
-var locks = (/* unused pure expression or super */ null && ([]));
+var locks = [];
 var documentListenerAdded = false;
-var initialClientY = (/* unused pure expression or super */ null && (-1));
+var initialClientY = -1;
 var previousBodyOverflowSetting = void 0;
 var previousBodyPosition = void 0;
 var previousBodyPaddingRight = void 0;
@@ -365,7 +365,50 @@ const inputAnimate = () => {
   });
 };
 /* harmony default export */ const input = (inputAnimate);
+;// CONCATENATED MODULE: ./source/js/components/burger.js
+
+const burger = () => {
+  const burgerEl = document?.querySelector('[data-burger]');
+  const menu = document?.querySelector('[data-menu]');
+  const targetElement = document.querySelector('body');
+  const close = document?.querySelector('[data-close]');
+  burgerEl?.addEventListener('click', () => {
+    burgerEl?.classList.add('burger--active');
+    menu?.classList.add('active');
+    bodyScrollLock_esm_disableBodyScroll(targetElement);
+  });
+  close?.addEventListener('click', () => {
+    burgerEl?.classList.remove('burger--active');
+    menu?.classList.remove('active');
+    bodyScrollLock_esm_enableBodyScroll(targetElement);
+  });
+  const mediaQuery = window.matchMedia('(max-width: 744px)');
+  if (mediaQuery.matches) {
+    const dropDown = document.querySelectorAll('.nav__item');
+    dropDown.forEach(el => {
+      el.addEventListener('click', e => {
+        const self = e.currentTarget;
+        const control = self.querySelector('.nav__link');
+        const content = self?.querySelector('.nav__submenu');
+        self.classList.toggle('open');
+        if (self.classList.contains('open')) {
+          content.style.maxHeight = `${content.scrollHeight}px`;
+        } else {
+          content.style.maxHeight = null;
+        }
+      });
+    });
+  }
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  };
+  window.addEventListener('resize', appHeight);
+  appHeight();
+};
+/* harmony default export */ const components_burger = (burger);
 ;// CONCATENATED MODULE: ./source/js/index.js
+
 
 
 
@@ -373,6 +416,7 @@ const inputAnimate = () => {
 // Init
 function init() {
   input();
+  components_burger();
 }
 (function () {
   init();
