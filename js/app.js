@@ -30,9 +30,9 @@ if (typeof window !== 'undefined') {
 var isIosDevice = typeof window !== 'undefined' && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
 
 
-var locks = [];
+var locks = (/* unused pure expression or super */ null && ([]));
 var documentListenerAdded = false;
-var initialClientY = -1;
+var initialClientY = (/* unused pure expression or super */ null && (-1));
 var previousBodyOverflowSetting = void 0;
 var previousBodyPosition = void 0;
 var previousBodyPaddingRight = void 0;
@@ -372,15 +372,26 @@ const burger = () => {
   const menu = document?.querySelector('[data-menu]');
   const targetElement = document.querySelector('body');
   const close = document?.querySelector('[data-close]');
+  function disableScroll() {
+    const pagePosition = window.scrollY;
+    document.body.classList.add('scroll');
+    document.body.dataset.position = pagePosition;
+  }
+  function enableScroll() {
+    document.body.classList.remove('scroll');
+    document.body.removeAttribute('data-position');
+  }
   burgerEl?.addEventListener('click', () => {
     burgerEl?.classList.add('burger--active');
     menu?.classList.add('active');
-    bodyScrollLock_esm_disableBodyScroll(targetElement);
+    // disableBodyScroll(targetElement);
+    disableScroll();
   });
   close?.addEventListener('click', () => {
     burgerEl?.classList.remove('burger--active');
     menu?.classList.remove('active');
-    bodyScrollLock_esm_enableBodyScroll(targetElement);
+    // enableBodyScroll(targetElement);
+    enableScroll();
   });
   const mediaQuery = window.matchMedia('(max-width: 744px)');
   if (mediaQuery.matches) {
