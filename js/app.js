@@ -418,7 +418,43 @@ const burger = () => {
   appHeight();
 };
 /* harmony default export */ const components_burger = (burger);
+;// CONCATENATED MODULE: ./source/js/components/tabs.js
+const tabs = () => {
+  let tabLinks = document.querySelectorAll(".tabs__button");
+  let tabContent = document.querySelectorAll(".tabs__content");
+  tabLinks.forEach(function (el) {
+    el.addEventListener("click", openTabs);
+  });
+  function openTabs(el) {
+    let btnTarget = el.currentTarget;
+    let country = btnTarget.dataset.country;
+    tabContent.forEach(function (el) {
+      el.classList.remove("active");
+    });
+    tabLinks.forEach(function (el) {
+      el.classList.remove("active");
+    });
+    document.querySelector("#" + country).classList.add("active");
+    btnTarget.classList.add("active");
+  }
+  const optionMenu = document?.querySelector('.tabs__head');
+  const selectBtn = optionMenu?.querySelector('.tabs__text');
+  const options = optionMenu?.querySelectorAll('.tabs__item');
+  const selected = optionMenu?.querySelector('.tabs__selected');
+  if (selectBtn) {
+    selectBtn.addEventListener('click', () => optionMenu.classList.toggle('active'));
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        let selectedOption = option.querySelector('.tabs__button').innerHTML;
+        selected.innerHTML = selectedOption;
+        optionMenu.classList.remove('active');
+      });
+    });
+  }
+};
+/* harmony default export */ const components_tabs = (tabs);
 ;// CONCATENATED MODULE: ./source/js/index.js
+
 
 
 
@@ -428,6 +464,7 @@ const burger = () => {
 function init() {
   input();
   components_burger();
+  components_tabs();
 }
 (function () {
   init();
