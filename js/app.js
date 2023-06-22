@@ -381,20 +381,26 @@ const burger = () => {
     document.body.classList.remove('scroll');
     document.body.removeAttribute('data-position');
   }
-  burgerEl?.addEventListener('click', () => {
-    burgerEl?.classList.add('burger--active');
-    menu?.classList.add('active');
-    // disableBodyScroll(targetElement);
-    disableScroll();
-  });
-  close?.addEventListener('click', () => {
-    burgerEl?.classList.remove('burger--active');
-    menu?.classList.remove('active');
-    // enableBodyScroll(targetElement);
-    enableScroll();
-  });
+  const mediaQueryTablet = window.matchMedia('(max-width: 1280px)');
+  if (mediaQueryTablet.matches) {
+    burgerEl?.addEventListener('click', () => {
+      burgerEl?.classList.toggle('burger--active');
+      menu?.classList.toggle('active');
+    });
+  }
   const mediaQuery = window.matchMedia('(max-width: 744px)');
   if (mediaQuery.matches) {
+    burgerEl?.addEventListener('click', () => {
+      burgerEl?.classList.add('burger--active');
+      menu?.classList.add('active');
+      // disableBodyScroll(targetElement);
+      disableScroll();
+    });
+    close?.addEventListener('click', () => {
+      menu?.classList.remove('active');
+      // enableBodyScroll(targetElement);
+      enableScroll();
+    });
     const dropDown = document.querySelectorAll('.nav__item');
     dropDown.forEach(el => {
       el.addEventListener('click', e => {
