@@ -1,0 +1,1540 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="container header__container">
+				<div class="header__wrapper">
+					<!--Logo-->
+					<div class="header__wrap">
+						<div class="logo">
+							<a href="index.html" class="logo__icon">
+								<img src="images/icon/logo.svg" alt="">
+							</a>
+							<div class="logo__text">
+								Официальный представитель
+								в России и СНГ
+							</div>
+						</div>
+						<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+							<span class="burger__line"></span>
+						</button>
+					</div>
+
+					<div class="header__panel" data-menu>
+						<nav class="nav header__menu">
+							<div class="header__top">
+								<div class="logo">
+									<a href="index.html" class="logo__icon">
+										<img src="images/icon/logo.svg" alt="">
+									</a>
+								</div>
+								<button type="button" class="menu-close" data-close>
+									<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.25 19.25L2.75 2.75M19.25 2.75L2.75 19.25" stroke="#E61F4D" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+							<ul class="nav__list list-reset">
+								<li class="nav__item">
+									<button type="button" class="nav__link">
+										<span>Каталог</span>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="nav__submenu">
+										<ul class="list-reset">
+											<li>
+												<a href="#">
+													<picture>
+														<source srcset="images/home/header/icon-product.webp 1x, images/home/header/icon-product@2x.webp 1.3x" type="image/webp">
+														<source srcset="images/home/header/icon-product.png 1x, images/home/header/icon-product@2x.png 1.3x" type="image/png">
+														<img src="images/home/header/icon-product.png" width="32" height="32" alt="">
+													</picture>
+													<span>Погружные насосы</span>
+												</a>
+												<ul class="list-reset">
+													<li>
+														<a href="#">
+															<picture>
+																<source srcset="images/home/header/icon-product-3.webp 1x, images/home/header/icon-product-3@2x.webp 1.3x" type="image/webp">
+																<source srcset="images/home/header/icon-product-3.png 1x, images/home/header/icon-product-3@2x.png 1.3x" type="image/png">
+																<img src="images/home/header/icon-product-3.png" width="32" height="32" alt="">
+															</picture>
+															<span>Насос серии“SM”</span>
+														</a>
+														<div class="product-card">
+															<div class="product-card__wrapper">
+																<div class="product-card__type">
+																	Погружные насосы
+																</div>
+																<div class="product-card__img">
+																	<picture>
+																		<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+																		<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+																	</picture>
+																</div>
+																<div class="product-card__name">
+																	<div>Насос серии“SM”</div>
+																</div>
+																<div class="product-card__status product-card__status--no">
+																	Нет в наличии
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">
+															<picture>
+																<source srcset="images/home/header/icon-product-3.webp 1x, images/home/header/icon-product-3@2x.webp 1.3x" type="image/webp">
+																<source srcset="images/home/header/icon-product-3.png 1x, images/home/header/icon-product-3@2x.png 1.3x" type="image/png">
+																<img src="images/home/header/icon-product-3.png" width="32" height="32" alt="">
+															</picture>
+															<span>Насос серии“SM”</span>
+														</a>
+														<div class="product-card">
+															<div class="product-card__wrapper">
+																<div class="product-card__type">
+																	Погружные насосы
+																</div>
+																<div class="product-card__img">
+																	<picture>
+																		<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+																		<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+																	</picture>
+																</div>
+																<div class="product-card__name">
+																	<div>Насос серии“SM”</div>
+																</div>
+																<div class="product-card__status product-card__status--no">
+																	Нет в наличии
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">
+															<picture>
+																<source srcset="images/home/header/icon-product-3.webp 1x, images/home/header/icon-product-3@2x.webp 1.3x" type="image/webp">
+																<source srcset="images/home/header/icon-product-3.png 1x, images/home/header/icon-product-3@2x.png 1.3x" type="image/png">
+																<img src="images/home/header/icon-product-3.png" width="32" height="32" alt="">
+															</picture>
+															<span>Насос серии“SM”</span>
+														</a>
+														<div class="product-card">
+															<div class="product-card__wrapper">
+																<div class="product-card__type">
+																	Погружные насосы
+																</div>
+																<div class="product-card__img">
+																	<picture>
+																		<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+																		<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+																	</picture>
+																</div>
+																<div class="product-card__name">
+																	<div>Насос серии“SM”</div>
+																</div>
+																<div class="product-card__status product-card__status--no">
+																	Нет в наличии
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">
+															<picture>
+																<source srcset="images/home/header/icon-product-3.webp 1x, images/home/header/icon-product-3@2x.webp 1.3x" type="image/webp">
+																<source srcset="images/home/header/icon-product-3.png 1x, images/home/header/icon-product-3@2x.png 1.3x" type="image/png">
+																<img src="images/home/header/icon-product-3.png" width="32" height="32" alt="">
+															</picture>
+															<span>Насос серии“SM”</span>
+														</a>
+														<div class="product-card">
+															<div class="product-card__wrapper">
+																<div class="product-card__type">
+																	Погружные насосы
+																</div>
+																<div class="product-card__img">
+																	<picture>
+																		<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+																		<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+																	</picture>
+																</div>
+																<div class="product-card__name">
+																	<div>Насос серии“SM”</div>
+																</div>
+																<div class="product-card__status product-card__status--no">
+																	Нет в наличии
+																</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<a href="#">
+															<picture>
+																<source srcset="images/home/header/icon-product-3.webp 1x, images/home/header/icon-product-3@2x.webp 1.3x" type="image/webp">
+																<source srcset="images/home/header/icon-product-3.png 1x, images/home/header/icon-product-3@2x.png 1.3x" type="image/png">
+																<img src="images/home/header/icon-product-3.png" width="32" height="32" alt="">
+															</picture>
+															<span>Насос серии“SM”</span>
+														</a>
+														<div class="product-card">
+															<div class="product-card__wrapper">
+																<div class="product-card__type">
+																	Погружные насосы
+																</div>
+																<div class="product-card__img">
+																	<picture>
+																		<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+																		<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+																		<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+																	</picture>
+																</div>
+																<div class="product-card__name">
+																	<div>Насос серии“SM”</div>
+																</div>
+																<div class="product-card__status product-card__status--no">
+																	Нет в наличии
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">
+													<picture>
+														<source srcset="images/home/header/icon-product-2.webp 1x, images/home/header/icon-product-2@2x.webp 1.3x" type="image/webp">
+														<source srcset="images/home/header/icon-product-2.png 1x, images/home/header/icon-product-2@2x.png 1.3x" type="image/png">
+														<img src="images/home/header/icon-product-2.png" width="32" height="32" alt="">
+													</picture>
+													<span>Циркуляционные насосы</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<picture>
+														<source srcset="images/home/header/icon-product-3.webp 1x, images/home/header/icon-product-3@2x.webp 1.3x" type="image/webp">
+														<source srcset="images/home/header/icon-product-3.png 1x, images/home/header/icon-product-3@2x.png 1.3x" type="image/png">
+														<img src="images/home/header/icon-product-3.png" width="32" height="32" alt="">
+													</picture>
+													<span>Консольно-моноблочные</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<picture>
+														<source srcset="images/home/header/icon-product-4.webp 1x, images/home/header/icon-product-4@2x.webp 1.3x" type="image/webp">
+														<source srcset="images/home/header/icon-product-4.png 1x, images/home/header/icon-product-4@2x.png 1.3x" type="image/png">
+														<img src="images/home/header/icon-product-4.png" width="32" height="32" alt="">
+													</picture>
+													<span>Многоступенчатые насосы</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item">
+									<button type="button" class="nav__link">
+										<span>О компании</span>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="nav__submenu">
+										<ul class="list-reset">
+											<li>
+												<a href="index.html">
+													<span>Представительство в России</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Производство</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item">
+									<button type="button" class="nav__link">
+										<span>Где купить</span>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="nav__submenu">
+										<ul class="list-reset">
+											<li>
+												<a href="#">
+													<span>Остатки на складе</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Список дилеров</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#">
+										<span>Дилерам</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#">
+										<span>Новости</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="contacts.html">
+										<span>Контакты</span>
+									</a>
+								</li>
+							</ul>
+
+
+							<div class="header__tel">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.4545 5.125C13.514 5.40995 14.48 5.9683 15.2559 6.74412C16.0317 7.51994 16.59 8.48599 16.875 9.54552" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M11.8073 7.54053C12.443 7.7115 13.0226 8.04651 13.4881 8.512C13.9536 8.97749 14.2886 9.55712 14.4596 10.1928" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M7.22471 11.7513C7.87302 13.0767 8.94739 14.1462 10.2758 14.7885C10.3729 14.8346 10.4804 14.8545 10.5877 14.8464C10.6949 14.8383 10.7982 14.8024 10.8874 14.7422L12.8433 13.438C12.9298 13.3803 13.0293 13.3451 13.1328 13.3356C13.2364 13.3261 13.3407 13.3426 13.4362 13.3835L17.0954 14.9517C17.2197 15.0045 17.3234 15.0963 17.3911 15.2132C17.4587 15.3301 17.4865 15.4658 17.4702 15.5999C17.3546 16.5049 16.913 17.3367 16.2282 17.9396C15.5434 18.5425 14.6624 18.8751 13.75 18.8751C10.9321 18.8751 8.22956 17.7557 6.23699 15.7631C4.24442 13.7706 3.125 11.0681 3.125 8.25014C3.12505 7.33777 3.45765 6.45671 4.06053 5.77192C4.66341 5.08712 5.49523 4.64556 6.40023 4.5299C6.53431 4.51368 6.67002 4.54146 6.78693 4.60908C6.90384 4.67669 6.99561 4.78046 7.04841 4.90476L8.61798 8.5671C8.65858 8.66183 8.67512 8.76513 8.66614 8.8678C8.65715 8.97047 8.62291 9.06932 8.56647 9.15556L7.26676 11.1415C7.2076 11.2308 7.17263 11.334 7.16526 11.4409C7.15789 11.5477 7.17837 11.6547 7.22471 11.7513V11.7513Z" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<a href="tel:8945121414">8(495)120-14-14</a>
+							</div>
+						</nav>
+					</div>
+					<div class="header__group">
+						<a href="tel:84951201414" class="header__link">8(495)120-14-14</a>
+						<a href="mailto:info@fancyrussia.ru" class="header__link">info@fancyrussia.ru</a>
+						<button type="button" class="header__callback">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.4545 5.125C13.514 5.40995 14.48 5.9683 15.2559 6.74412C16.0317 7.51994 16.59 8.48599 16.875 9.54552" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M11.8073 7.54053C12.443 7.7115 13.0226 8.04651 13.4881 8.512C13.9536 8.97749 14.2886 9.55712 14.4596 10.1928" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M7.22471 11.7513C7.87302 13.0767 8.94739 14.1462 10.2758 14.7885C10.3729 14.8346 10.4804 14.8545 10.5877 14.8464C10.6949 14.8383 10.7982 14.8024 10.8874 14.7422L12.8433 13.438C12.9298 13.3803 13.0293 13.3451 13.1328 13.3356C13.2364 13.3261 13.3407 13.3426 13.4362 13.3835L17.0954 14.9517C17.2197 15.0045 17.3234 15.0963 17.3911 15.2132C17.4587 15.3301 17.4865 15.4658 17.4702 15.5999C17.3546 16.5049 16.913 17.3367 16.2282 17.9396C15.5434 18.5425 14.6624 18.8751 13.75 18.8751C10.9321 18.8751 8.22956 17.7557 6.23699 15.7631C4.24442 13.7706 3.125 11.0681 3.125 8.25014C3.12505 7.33777 3.45765 6.45671 4.06053 5.77192C4.66341 5.08712 5.49523 4.64556 6.40023 4.5299C6.53431 4.51368 6.67002 4.54146 6.78693 4.60908C6.90384 4.67669 6.99561 4.78046 7.04841 4.90476L8.61798 8.5671C8.65858 8.66183 8.67512 8.76513 8.66614 8.8678C8.65715 8.97047 8.62291 9.06932 8.56647 9.15556L7.26676 11.1415C7.2076 11.2308 7.17263 11.334 7.16526 11.4409C7.15789 11.5477 7.17837 11.6547 7.22471 11.7513V11.7513Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list list-reset">
+						<li class="breadcrumbs__item list-reset">
+							<a href="index.html" class="breadcrumbs__link">
+								<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.25 12.5H13.75M12.5 7.15758V12.5L8.75 12.5V9.99999C8.75 9.30963 8.19036 8.74999 7.5 8.74999C6.80964 8.74999 6.25 9.30963 6.25 9.99999V12.5H2.5V7.15758C2.5 6.82362 2.5 6.65662 2.54061 6.50122C2.57659 6.36351 2.63581 6.23291 2.71576 6.11514C2.80597 5.98225 2.93165 5.87232 3.18298 5.65241L6.18298 3.02741C6.64962 2.6191 6.88281 2.41498 7.14539 2.33733C7.37676 2.26891 7.62324 2.26891 7.85461 2.33733C8.11719 2.41498 8.35051 2.6191 8.81714 3.02741L11.8171 5.65241C12.0685 5.87232 12.194 5.98225 12.2842 6.11514C12.3642 6.23291 12.4234 6.36351 12.4594 6.50122C12.5 6.65662 12.5 6.82362 12.5 7.15758Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</li>
+						<li class="breadcrumbs__item list-reset">
+							<a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="catalog">
+				<div class="container">
+					<div class="tabs tabs--catalog">
+						<div class="tabs__head">
+							<div class="tabs__text">
+								<span class="tabs__selected">Выберите тип насоса
+								</span>
+							</div>
+							<ul class="tabs__buttons list-reset">
+								<li class="tabs__item">
+									<button class="tabs__button active" data-country="submersible">
+										<span class="tabs__name">Погружные</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__button" data-country="circulating">
+										<span class="tabs__name">Циркуляционные</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__button" data-country="monoblock">
+										<span class="tabs__name">Консольно-<br>
+											моноблочные</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__button" data-country="multistage">
+										<span class="tabs__name">Многоступенчатые</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div id="submersible" class="tabs__content active">
+							<div class="section-head">
+								<h2 class="section-title catalog__title">
+									Погружные насосы
+								</h2>
+							</div>
+							<div class="catalog__wrapper">
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Вертикальный
+												многоступенчатый насос серии CDL
+											</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="pagination">
+								<ul class="pagination__list list-reset">
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.0127 8.00033H2.08945M2.08945 8.00033L5.40146 4.66699M2.08945 8.00033L5.40146 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											1
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											2
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											3
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.9873 8.00033H13.9105M13.9105 8.00033L10.5985 4.66699M13.9105 8.00033L10.5985 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="circulating" class="tabs__content">
+							<div class="section-head">
+								<h2 class="section-title catalog__title">
+									Циркуляционные
+								</h2>
+							</div>
+							<div class="catalog__wrapper">
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Вертикальный
+												многоступенчатый насос серии CDL
+											</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="pagination">
+								<ul class="pagination__list list-reset">
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.0127 8.00033H2.08945M2.08945 8.00033L5.40146 4.66699M2.08945 8.00033L5.40146 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											1
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											2
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											3
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.9873 8.00033H13.9105M13.9105 8.00033L10.5985 4.66699M13.9105 8.00033L10.5985 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="monoblock" class="tabs__content">
+							<div class="section-head">
+								<h2 class="section-title catalog__title">
+									Консольно-
+									моноблочные
+								</h2>
+							</div>
+							<div class="catalog__wrapper">
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Вертикальный
+												многоступенчатый насос серии CDL
+											</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="pagination">
+								<ul class="pagination__list list-reset">
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.0127 8.00033H2.08945M2.08945 8.00033L5.40146 4.66699M2.08945 8.00033L5.40146 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											1
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											2
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											3
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.9873 8.00033H13.9105M13.9105 8.00033L10.5985 4.66699M13.9105 8.00033L10.5985 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="multistage" class="tabs__content">
+							<div class="section-head">
+								<h2 class="section-title catalog__title">
+									Многоступенчатые
+								</h2>
+							</div>
+							<div class="catalog__wrapper">
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Вертикальный
+												многоступенчатый насос серии CDL
+											</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+								<div class="product-card product-card--catalog">
+									<div class="product-card__wrapper">
+										<div class="product-card__type">
+											Погружные насосы
+										</div>
+										<div class="product-card__img">
+											<picture>
+												<source srcset="images/home/popular/product/product-1.webp 1x, images/home/popular/product/product-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/popular/product/product-1.png 1x, images/home/popular/product/product-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/popular/product/product-1.png" width="240" height="180" alt="">
+											</picture>
+										</div>
+										<div class="product-card__name">
+											<div>Насос серии“SM”</div>
+										</div>
+										<div class="product-card__status product-card__status--no">
+											Нет в наличии
+										</div>
+										<a href="#" class="b-btn b-btn--pink">
+											Подробнее
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="pagination">
+								<ul class="pagination__list list-reset">
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.0127 8.00033H2.08945M2.08945 8.00033L5.40146 4.66699M2.08945 8.00033L5.40146 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											1
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											2
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											3
+										</a>
+									</li>
+									<li class="pagination__item">
+										<a href="" class="pagination__link">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.9873 8.00033H13.9105M13.9105 8.00033L10.5985 4.66699M13.9105 8.00033L10.5985 11.3337" stroke="#999999" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback__wrapper">
+						<div class="feedback__left">
+							<div class="feedback__wrap">
+								<h2 class="section-title feedback__title">
+									Остались вопросы?
+								</h2>
+								<div class="feedback__text">
+									<p>
+										Сообщите нам, что вас интересует, и&nbsp;мы&nbsp;обязательно ответим
+									</p>
+								</div>
+							</div>
+							<form action="#" class="form form--feedback" id="feedback">
+								<div class="form__row">
+									<div class="form__wrap">
+										<div class="form__group">
+											<label for="form-name" class="form__label">
+												<input name="form-name" type="text" class="form__input" placeholder="none" id="form-name">
+												<span class="form__name">Имя</span>
+											</label>
+										</div>
+									</div>
+									<div class="form__wrap">
+										<div class="form__group">
+											<label for="form-phone" class="form__label">
+												<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone">
+												<span class="form__name">Телефон</span>
+											</label>
+										</div>
+
+									</div>
+									<div class="form__wrap">
+										<div class="form__group">
+											<label for="form-email" class="form__label">
+												<input name="form-email" type="text" class="form__input" placeholder="none" id="form-email">
+												<span class="form__name">Email</span>
+											</label>
+										</div>
+									</div>
+									<div class="form__wrap">
+										<div class="form__group">
+											<label for="form-company" class="form__label">
+												<input name="form-company" type="text" class="form__input" placeholder="Компания" id="form-company">
+												<span class="form__name">Компания</span>
+											</label>
+										</div>
+
+									</div>
+								</div>
+								<div class="form__wrapper">
+									<label for="form-area">
+										<textarea name="form-area" id="form-area" cols="30" rows="7" class="form__area" placeholder="Комментарий"></textarea>
+									</label>
+
+								</div>
+								<div class="form__bottom">
+									<button type="button" class="form__btn b-btn b-btn--pink">Отправить</button>
+									<span>
+										Нажимая «Отправить», я даю согласие на обработку своих персональных данных
+									</span>
+								</div>
+							</form>
+						</div>
+						<div class="feedback__right">
+							<picture>
+								<source media="(min-width:1280px)" srcset="images/home/feedback/feedback-desktop.webp 1x, images/home/feedback/feedback-desktop@2x.webp 1.3x" type="image/webp">
+								<source media="(min-width:1280px)" srcset="images/home/feedback/feedback-desktop.jpg 1x, images/home/feedback/feedback-desktop@2x.jpg 1.3x" type="image/jpg">
+								<source srcset="images/home/feedback/feedback-tablet.webp 1x, images/home/feedback/feedback-tablet@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/feedback/feedback-tablet.jpg 1x, images/home/feedback/feedback-tablet@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/home/feedback/feedback-tablet.jpg" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="logo logo--footer">
+						<a href="index.html" class="logo__icon">
+							<img src="images/icon/logo.svg" alt="">
+						</a>
+						<div class="logo__text">
+							Официальный представитель
+							в России и СНГ
+						</div>
+					</div>
+					<ul class="footer__nav list-reset">
+						<li>
+							<a href="catalog.html">
+								Каталог
+							</a>
+						</li>
+						<li>
+							<a href="about.html">
+								О компании
+							</a>
+						</li>
+						<li>
+							<a href="buy.html">
+								Где купить
+							</a>
+						</li>
+						<li>
+							<a href="dealer.html">
+								Дилерам
+							</a>
+						</li>
+						<li>
+							<a href="news.html">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="contacts.html">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__middle">
+					<div class="contact">
+						<div class="contact__wrapper">
+							<div class="contact__item">
+								<div class="contact__wrap">
+									<div class="contact__icon">
+										<img src="images/icon/contact.svg" alt="" width="40" height="40">
+									</div>
+									<div class="contact__name">
+										Адрес
+									</div>
+								</div>
+								<div class="contact__info">
+									<a href="https://yandex.ru/maps/org/rebay/1060149627/?ll=37.632475%2C55.673392&utm_source=share&z=17" target="_blank">Москва, Каширское ш., д.3, к.2, стр.2, этаж 3, пом. 2, 3</a>
+								</div>
+							</div>
+							<div class="contact__item">
+								<div class="contact__wrap">
+									<div class="contact__icon">
+										<img src="images/icon/phone.svg" alt="" width="40" height="40">
+									</div>
+									<div class="contact__name">
+										Контакты
+									</div>
+								</div>
+								<div class="contact__info">
+									<a href="tel:84951201414">8(495)120-14-14</a>
+									<a href="mailto:info@fancyrussia.ru">info@fancyrussia.ru</a>
+								</div>
+							</div>
+							<div class="contact__item">
+								<div class="contact__wrap">
+									<div class="contact__icon">
+										<img src="images/icon/time.svg" alt="" width="40" height="40">
+									</div>
+									<div class="contact__name">
+										Режим работы
+									</div>
+								</div>
+								<div class="contact__info">
+									Пн - Пт с 10:00 до 18:00
+								</div>
+								<div class="contact__subinfo">
+									(Московское время)
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__link">
+						© ООО «РЕБАЙ», 2023
+					</div>
+					<div class="footer__link">
+						<a href="https://pedrollo.ru/upload/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D1%8B%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.doc" target="_blank">Политика конфиденциальности</a>
+					</div>
+					<div class="footer__link">
+						<a href="http://rhino-digital.com" target="_blank">Сделано в Rhino</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
