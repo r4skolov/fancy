@@ -11127,6 +11127,42 @@ function init() {
       el: '.swiper-pagination'
     }
   }));
+  const sliderDeclaration = document.querySelectorAll('[data-slider="declaration-slider"]');
+  sliderDeclaration.forEach(item => slider(item, {
+    loop: false,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.declaration-next',
+      prevEl: '.declaration-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  }));
+  const sliderProcess = document.querySelectorAll('[data-slider="process-slider"]');
+  sliderProcess.forEach(item => slider(item, {
+    loop: false,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.process-next',
+      prevEl: '.process-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  }));
+  const sliderCertificates = document.querySelectorAll('[data-slider="certificates-slider"]');
+  sliderCertificates.forEach(item => slider(item, {
+    loop: false,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.certificates-next',
+      prevEl: '.certificates-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  }));
 }
 (function () {
   init();
