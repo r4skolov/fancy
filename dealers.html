@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Дилерам</title>
+	<link rel="stylesheet" href="css/glightbox.css">
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
@@ -33,7 +34,6 @@
 							<span class="burger__line"></span>
 						</button>
 					</div>
-
 					<div class="header__panel" data-menu>
 						<nav class="nav header__menu">
 							<div class="header__top">
@@ -314,20 +314,17 @@
 								</li>
 							</ul>
 
-
 							<div class="header__tel">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.4545 5.125C13.514 5.40995 14.48 5.9683 15.2559 6.74412C16.0317 7.51994 16.59 8.48599 16.875 9.54552" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M11.8073 7.54053C12.443 7.7115 13.0226 8.04651 13.4881 8.512C13.9536 8.97749 14.2886 9.55712 14.4596 10.1928" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M7.22471 11.7513C7.87302 13.0767 8.94739 14.1462 10.2758 14.7885C10.3729 14.8346 10.4804 14.8545 10.5877 14.8464C10.6949 14.8383 10.7982 14.8024 10.8874 14.7422L12.8433 13.438C12.9298 13.3803 13.0293 13.3451 13.1328 13.3356C13.2364 13.3261 13.3407 13.3426 13.4362 13.3835L17.0954 14.9517C17.2197 15.0045 17.3234 15.0963 17.3911 15.2132C17.4587 15.3301 17.4865 15.4658 17.4702 15.5999C17.3546 16.5049 16.913 17.3367 16.2282 17.9396C15.5434 18.5425 14.6624 18.8751 13.75 18.8751C10.9321 18.8751 8.22956 17.7557 6.23699 15.7631C4.24442 13.7706 3.125 11.0681 3.125 8.25014C3.12505 7.33777 3.45765 6.45671 4.06053 5.77192C4.66341 5.08712 5.49523 4.64556 6.40023 4.5299C6.53431 4.51368 6.67002 4.54146 6.78693 4.60908C6.90384 4.67669 6.99561 4.78046 7.04841 4.90476L8.61798 8.5671C8.65858 8.66183 8.67512 8.76513 8.66614 8.8678C8.65715 8.97047 8.62291 9.06932 8.56647 9.15556L7.26676 11.1415C7.2076 11.2308 7.17263 11.334 7.16526 11.4409C7.15789 11.5477 7.17837 11.6547 7.22471 11.7513V11.7513Z" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-								<a href="tel:8945121414">8(495)120-14-14</a>
+								<a href="tel:84951201414" class="header__link header__link--tel">8(495)120-14-14</a>
+							</div>
+							<div class="header__mail">
+								<a href="mailto:info@fancyrussia.ru" class="header__link header__link--mail">info@fancyrussia.ru</a>
 							</div>
 						</nav>
 					</div>
 					<div class="header__group">
-						<a href="tel:84951201414" class="header__link">8(495)120-14-14</a>
-						<a href="mailto:info@fancyrussia.ru" class="header__link">info@fancyrussia.ru</a>
+						<a href="tel:84951201414" class="header__link header__link--tel">8(495)120-14-14</a>
+						<a href="mailto:info@fancyrussia.ru" class="header__link header__link--mail">info@fancyrussia.ru</a>
 						<button type="button" class="header__callback">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M12.4545 5.125C13.514 5.40995 14.48 5.9683 15.2559 6.74412C16.0317 7.51994 16.59 8.48599 16.875 9.54552" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -344,23 +341,24 @@
 
 			<div class="breadcrumbs">
 				<div class="container">
-					<ul class="breadcrumbs__list list-reset">
-						<li class="breadcrumbs__item list-reset">
-							<a href="index.html" class="breadcrumbs__link">
-								<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.25 12.5H13.75M12.5 7.15758V12.5L8.75 12.5V9.99999C8.75 9.30963 8.19036 8.74999 7.5 8.74999C6.80964 8.74999 6.25 9.30963 6.25 9.99999V12.5H2.5V7.15758C2.5 6.82362 2.5 6.65662 2.54061 6.50122C2.57659 6.36351 2.63581 6.23291 2.71576 6.11514C2.80597 5.98225 2.93165 5.87232 3.18298 5.65241L6.18298 3.02741C6.64962 2.6191 6.88281 2.41498 7.14539 2.33733C7.37676 2.26891 7.62324 2.26891 7.85461 2.33733C8.11719 2.41498 8.35051 2.6191 8.81714 3.02741L11.8171 5.65241C12.0685 5.87232 12.194 5.98225 12.2842 6.11514C12.3642 6.23291 12.4234 6.36351 12.4594 6.50122C12.5 6.65662 12.5 6.82362 12.5 7.15758Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</a>
-						</li>
-						<li class="breadcrumbs__item list-reset">
-							<a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">
-								Контакты
-							</a>
-						</li>
-					</ul>
+					<div class="breadcrumbs__wrapper">
+						<ul class="breadcrumbs__list list-reset">
+							<li class="breadcrumbs__item list-reset">
+								<a href="index.html" class="breadcrumbs__link">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.25 12.5H13.75M12.5 7.15758V12.5L8.75 12.5V9.99999C8.75 9.30963 8.19036 8.74999 7.5 8.74999C6.80964 8.74999 6.25 9.30963 6.25 9.99999V12.5H2.5V7.15758C2.5 6.82362 2.5 6.65662 2.54061 6.50122C2.57659 6.36351 2.63581 6.23291 2.71576 6.11514C2.80597 5.98225 2.93165 5.87232 3.18298 5.65241L6.18298 3.02741C6.64962 2.6191 6.88281 2.41498 7.14539 2.33733C7.37676 2.26891 7.62324 2.26891 7.85461 2.33733C8.11719 2.41498 8.35051 2.6191 8.81714 3.02741L11.8171 5.65241C12.0685 5.87232 12.194 5.98225 12.2842 6.11514C12.3642 6.23291 12.4234 6.36351 12.4594 6.50122C12.5 6.65662 12.5 6.82362 12.5 7.15758Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</li>
+							<li class="breadcrumbs__item list-reset">
+								<a href="dealers.html" class="breadcrumbs__link breadcrumbs__link--active">
+									Дилерам
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-
 			<section class="hero-dealers">
 				<div class="container">
 					<div class="hero-dealers__grid">
@@ -375,11 +373,11 @@
 								Обучение персонала
 							</li>
 							<li>
-								Обучение персонала
+								Гибкие и быстрые сроки доставки
 							</li>
 						</ul>
 						<div class="hero-dealers__wrap">
-							<a href="#" class="b-btn b-btn--pink">Связаться</a>
+							<a href="#feedback" class="b-btn b-btn--pink js-smooth-scroll">Связаться</a>
 							<span>Свяжитесь с нами, чтобы мы рассказали больше</span>
 						</div>
 						<div class="hero-dealers__img">
@@ -467,21 +465,22 @@
 						</div>
 						<div class="dealer-about__item dealer-about__item--two">
 							<div class="dealer-about__icon">
-								<img src="images/icon/user.svg" alt="" width="40" height="40">
+								<img src="images/icon/book.svg" alt="" width="40" height="40">
 							</div>
 							<div class="dealer-about__descr">
 								<p>
-									Для каждого партнера мы рассчитываем персональную скидку при долгосрочном сотрудничестве
+									Наши сотрудники проведут для вас индивидуальное обучение по использованию оборудования
 								</p>
 							</div>
 						</div>
 						<div class="dealer-about__item dealer-about__item--three">
 							<div class="dealer-about__icon">
-								<img src="images/icon/user.svg" alt="" width="40" height="40">
+								<img src="images/icon/settings.svg" alt="" width="40" height="40">
 							</div>
 							<div class="dealer-about__descr">
 								<p>
-									Для каждого партнера мы рассчитываем персональную скидку при долгосрочном сотрудничестве
+									При появлении поломок или сложностей в установке мы всегда готовы помочь вам с решением любой
+									проблемы
 								</p>
 							</div>
 						</div>
@@ -489,7 +488,7 @@
 
 							<div class="dealer-about__descr">
 								<p>
-									Для каждого партнера мы рассчитываем персональную скидку при долгосрочном сотрудничестве
+									Компания «РЕБАЙ» предоставляет гарантию на все оборудование24 месяца
 								</p>
 							</div>
 						</div>
@@ -512,7 +511,7 @@
 										Мы работаем на рынке уже больше 25 лет и имеем обширную базу дилеров по всей России
 									</p>
 								</div>
-								<a href="#" class="b-btn b-btn--pink">
+								<a href="map.html" class="b-btn b-btn--pink">
 									Ознакомиться со списком дилеров
 								</a>
 							</div>
@@ -538,7 +537,7 @@
 									проводим обучение персонала по эксплуатации техники.
 								</p>
 							</div>
-							<a href="#" class="dealer-rebay__link link">
+							<a href="representation.html" class="dealer-rebay__link link">
 								<span>Подробнее о компании</span>
 								<span class="arrow right">
 							</a>
@@ -567,7 +566,7 @@
 				</div>
 			</section>
 
-			<section class="feedback">
+			<section class="feedback" id="feedback">
 				<div class="container">
 					<div class="feedback__wrapper">
 						<div class="feedback__left">

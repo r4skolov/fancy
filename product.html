@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Продукт</title>
+	<link rel="stylesheet" href="css/glightbox.css">
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
@@ -33,7 +34,6 @@
 							<span class="burger__line"></span>
 						</button>
 					</div>
-
 					<div class="header__panel" data-menu>
 						<nav class="nav header__menu">
 							<div class="header__top">
@@ -314,20 +314,17 @@
 								</li>
 							</ul>
 
-
 							<div class="header__tel">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12.4545 5.125C13.514 5.40995 14.48 5.9683 15.2559 6.74412C16.0317 7.51994 16.59 8.48599 16.875 9.54552" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M11.8073 7.54053C12.443 7.7115 13.0226 8.04651 13.4881 8.512C13.9536 8.97749 14.2886 9.55712 14.4596 10.1928" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M7.22471 11.7513C7.87302 13.0767 8.94739 14.1462 10.2758 14.7885C10.3729 14.8346 10.4804 14.8545 10.5877 14.8464C10.6949 14.8383 10.7982 14.8024 10.8874 14.7422L12.8433 13.438C12.9298 13.3803 13.0293 13.3451 13.1328 13.3356C13.2364 13.3261 13.3407 13.3426 13.4362 13.3835L17.0954 14.9517C17.2197 15.0045 17.3234 15.0963 17.3911 15.2132C17.4587 15.3301 17.4865 15.4658 17.4702 15.5999C17.3546 16.5049 16.913 17.3367 16.2282 17.9396C15.5434 18.5425 14.6624 18.8751 13.75 18.8751C10.9321 18.8751 8.22956 17.7557 6.23699 15.7631C4.24442 13.7706 3.125 11.0681 3.125 8.25014C3.12505 7.33777 3.45765 6.45671 4.06053 5.77192C4.66341 5.08712 5.49523 4.64556 6.40023 4.5299C6.53431 4.51368 6.67002 4.54146 6.78693 4.60908C6.90384 4.67669 6.99561 4.78046 7.04841 4.90476L8.61798 8.5671C8.65858 8.66183 8.67512 8.76513 8.66614 8.8678C8.65715 8.97047 8.62291 9.06932 8.56647 9.15556L7.26676 11.1415C7.2076 11.2308 7.17263 11.334 7.16526 11.4409C7.15789 11.5477 7.17837 11.6547 7.22471 11.7513V11.7513Z" stroke="#E61F4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-								<a href="tel:8945121414">8(495)120-14-14</a>
+								<a href="tel:84951201414" class="header__link header__link--tel">8(495)120-14-14</a>
+							</div>
+							<div class="header__mail">
+								<a href="mailto:info@fancyrussia.ru" class="header__link header__link--mail">info@fancyrussia.ru</a>
 							</div>
 						</nav>
 					</div>
 					<div class="header__group">
-						<a href="tel:84951201414" class="header__link">8(495)120-14-14</a>
-						<a href="mailto:info@fancyrussia.ru" class="header__link">info@fancyrussia.ru</a>
+						<a href="tel:84951201414" class="header__link header__link--tel">8(495)120-14-14</a>
+						<a href="mailto:info@fancyrussia.ru" class="header__link header__link--mail">info@fancyrussia.ru</a>
 						<button type="button" class="header__callback">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M12.4545 5.125C13.514 5.40995 14.48 5.9683 15.2559 6.74412C16.0317 7.51994 16.59 8.48599 16.875 9.54552" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -344,34 +341,326 @@
 
 			<div class="breadcrumbs">
 				<div class="container">
-					<ul class="breadcrumbs__list list-reset">
-						<li class="breadcrumbs__item list-reset">
-							<a href="index.html" class="breadcrumbs__link">
-								<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.25 12.5H13.75M12.5 7.15758V12.5L8.75 12.5V9.99999C8.75 9.30963 8.19036 8.74999 7.5 8.74999C6.80964 8.74999 6.25 9.30963 6.25 9.99999V12.5H2.5V7.15758C2.5 6.82362 2.5 6.65662 2.54061 6.50122C2.57659 6.36351 2.63581 6.23291 2.71576 6.11514C2.80597 5.98225 2.93165 5.87232 3.18298 5.65241L6.18298 3.02741C6.64962 2.6191 6.88281 2.41498 7.14539 2.33733C7.37676 2.26891 7.62324 2.26891 7.85461 2.33733C8.11719 2.41498 8.35051 2.6191 8.81714 3.02741L11.8171 5.65241C12.0685 5.87232 12.194 5.98225 12.2842 6.11514C12.3642 6.23291 12.4234 6.36351 12.4594 6.50122C12.5 6.65662 12.5 6.82362 12.5 7.15758Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</a>
-						</li>
-						<li class="breadcrumbs__item list-reset">
-							<a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">
-								Контакты
-							</a>
-						</li>
-					</ul>
+					<div class="breadcrumbs__wrapper">
+						<ul class="breadcrumbs__list list-reset">
+							<li class="breadcrumbs__item list-reset">
+								<a href="index.html" class="breadcrumbs__link">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.25 12.5H13.75M12.5 7.15758V12.5L8.75 12.5V9.99999C8.75 9.30963 8.19036 8.74999 7.5 8.74999C6.80964 8.74999 6.25 9.30963 6.25 9.99999V12.5H2.5V7.15758C2.5 6.82362 2.5 6.65662 2.54061 6.50122C2.57659 6.36351 2.63581 6.23291 2.71576 6.11514C2.80597 5.98225 2.93165 5.87232 3.18298 5.65241L6.18298 3.02741C6.64962 2.6191 6.88281 2.41498 7.14539 2.33733C7.37676 2.26891 7.62324 2.26891 7.85461 2.33733C8.11719 2.41498 8.35051 2.6191 8.81714 3.02741L11.8171 5.65241C12.0685 5.87232 12.194 5.98225 12.2842 6.11514C12.3642 6.23291 12.4234 6.36351 12.4594 6.50122C12.5 6.65662 12.5 6.82362 12.5 7.15758Z" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</li>
+							<li class="breadcrumbs__item list-reset">
+								<a href="catalog.html" class="breadcrumbs__link">
+									Каталог
+								</a>
+							</li>
+							<li class="breadcrumbs__item list-reset">
+								<a href="#" class="breadcrumbs__link">
+									Погружные насосы
+								</a>
+							</li>
+							<li class="breadcrumbs__item list-reset">
+								<a href="#" class="breadcrumbs__link breadcrumbs__link--active">
+									Вертикальный
+									многоступенчатый насос серии CDL
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-
-			<div class="product">
+			<div class="product" data-slider="product-slider">
 				<div class="container">
 					<div class="product__wrapper">
-						<div class="product__slider">
-
+						<div class="product__main">
+							<div class="product__slider">
+								<button type="button" class="product__zoom">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.417 17.467a.7.7 0 1 0 0 1.4v-1.4Zm5.5 1.4a.7.7 0 1 0 0-1.4v1.4Zm-2.05-3.45a.7.7 0 1 0-1.4 0h1.4Zm-1.4 5.5a.7.7 0 1 0 1.4 0h-1.4Zm5.778 1.338a.7.7 0 0 0-.99.99l.99-.99Zm4.51 6.49a.7.7 0 0 0 .99-.99l-.99.99Zm-12.338-9.878h5.5v-1.4h-5.5v1.4Zm2.05-3.45v5.5h1.4v-5.5h-1.4Zm.7 8.466a5.717 5.717 0 0 1-5.717-5.716h-1.4a7.117 7.117 0 0 0 7.117 7.116v-1.4Zm-5.717-5.716a5.717 5.717 0 0 1 5.717-5.717v-1.4a7.117 7.117 0 0 0-7.117 7.117h1.4Zm5.717-5.717a5.717 5.717 0 0 1 5.716 5.717h1.4a7.117 7.117 0 0 0-7.116-7.117v1.4Zm5.716 5.717a5.717 5.717 0 0 1-5.716 5.716v1.4a7.117 7.117 0 0 0 7.116-7.116h-1.4Zm-1.628 5.078 5.5 5.5.99-.99-5.5-5.5-.99.99Z" fill="#CCC" />
+										<rect x=".5" y=".5" width="39" height="39" rx="3.5" stroke="#CCC" />
+									</svg>
+								</button>
+								<div class="product__tooltip">
+									<span class="tooltip">
+										<button class="tooltip__btn btn-reset" aria-describedby="office">
+											<img src="images/icon/shield.svg" alt="">
+										</button>
+										<span class="tooltip__txt" role="tooltip" id="office">
+											<span class="visually-hidden">Гарантия 24 месяца</span>
+										</span>
+									</span>
+								</div>
+								<div class="swiper swiper--product">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a href="images/product/product.png" class="glightbox" data-gallery="gallery">
+												<picture>
+													<source srcset="images/product/product.webp 1x, images/product/product@2x.webp 1.3x" type="image/webp">
+													<source srcset="images/product/product.png 1x, images/product/product@2x.png 1.3x" type="image/jpg">
+													<img src="images/product/product.png" width="424" height="318" alt="">
+												</picture>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="images/product/product.png" class="glightbox" data-gallery="gallery">
+												<picture>
+													<source srcset="images/product/product.webp 1x, images/product/product@2x.webp 1.3x" type="image/webp">
+													<source srcset="images/product/product.png 1x, images/product/product@2x.png 1.3x" type="image/jpg">
+													<img src="images/product/product.png" width="424" height="318" alt="">
+												</picture>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper swiper--nav">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/product/product.webp 1x, images/product/product@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/product/product.png 1x, images/product/product@2x.png 1.3x" type="image/jpg">
+											<img src="images/product/product.png" width="424" height="318" alt="">
+										</picture>
+									</div>
+									<div class="swiper-slide">
+										<picture>
+											<source srcset="images/product/product.webp 1x, images/product/product@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/product/product.png 1x, images/product/product@2x.png 1.3x" type="image/jpg">
+											<img src="images/product/product.png" width="424" height="318" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product__top">
+							<h3 class="product__name">
+								Вертикальный многоступенчатый насос серии CDL
+							</h3>
+							<div class="product__text">
+								<p>
+									Вертикальный многоступенчатый центробежный насоc
+									из нержавеющей стали 304
+								</p>
+							</div>
+						</div>
+						<div class="product__bottom">
+							<div class="product__subtext">
+								Доступные опции по запросу:
+							</div>
+							<ul class="product__list list-reset">
+								<li>
+									Электродвигатель: Однофазный 230В-50Гц с тепловой защитой, встроенной в обмотку, до P2 =
+									2.2кВт
+								</li>
+								<li>
+									Датчик PTCT
+								</li>
+							</ul>
+							<a href="#" class="product__doc" download>
+								Скачать PDF
+							</a>
+						</div>
+						<div class="product__info">
+							<div class="product__price">
+								Цена: под заказ
+							</div>
+							<div class="product__wrap">
+								<div class="product__status product__status--yes">
+									В наличии
+								</div>
+								<div class="product__article">
+									Арт. SP61353
+								</div>
+							</div>
+							<a href="#" class="product__btn b-btn b-btn--pink">Оставить заявку</a>
+							<div class="product__guarantee">Гарантия на оборудование 24 месяца</div>
+						</div>
+					</div>
+					<div class="product__tabs">
+						<div class="accordion-tabs js-tabs" id="myTabs" data-tabs-allowed="true" data-breakpoint="744" data-start-collapsed="true">
+							<div class="accordion-tabs__head">
+								<ul role="tablist" class="accordion-tabs__list list-reset">
+									<li role="presentation">
+										<a href="#tab-1" role="tab" id="tab1" aria-controls="tab-1" aria-selected="true" class="accordion-tabs__trigger js-tabs-trigger">Описание</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab-2" role="tab" id="tab2" aria-controls="tab-2" class="accordion-tabs__trigger js-tabs-trigger">Эксплуатация</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab-3" role="tab" id="tab3" aria-controls="tab-3" class="accordion-tabs__trigger js-tabs-trigger">Технические характеристики</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab-4" role="tab" id="tab4" aria-controls="tab-4" class="accordion-tabs__trigger js-tabs-trigger">Кривая производительности</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab-5" role="tab" id="tab5" aria-controls="tab-5" class="accordion-tabs__trigger js-tabs-trigger">Используемые материалы</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab-6" role="tab" id="tab6" aria-controls="tab-6" class="accordion-tabs__trigger js-tabs-trigger">Маркировка</a>
+									</li>
+								</ul>
+							</div>
+							<div id="tab-1" role="tabpanel" aria-labelledby="tab1" class="accordion-tabs__panel js-tabs-panel" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-1" aria-expanded="true" tabindex="0">
+									<span>Описание</span>
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="accordion-tabs__content content" aria-hidden="false">
+									<ul class="product__list list-reset">
+										<li>
+											Вертикальный многоступенчатый центробежный насоc
+											из нержавеющей стали 304.
+										</li>
+										<li>
+											Всасывающие и нагнетательные патрубки расположены
+											на одной оси. Легкая установка в линию (in-line).
+										</li>
+										<li>
+											Головная часть насоса и основание насосов CDM
+											изготовлены из чугуна.
+										</li>
+										<li>
+											Рабочее колесо и вал насоса CDM изготовлены из
+											нержавеющей стали.
+										</li>
+										<li>
+											Все проточные детали насоса CDMF изготовлены из
+											нержавеющей стали.
+										</li>
+										<li>
+											Насосы оснащены высокоэффективным двигателем IE3 с
+											классом защиты IP55 F.
+										</li>
+										<li>
+											Качественный подшипник, износостойкое механическое
+											уплотнение.
+										</li>
+										<li>
+											Круглый фланец.
+										</li>
+										<li>
+											Температура жидкости от - 10°C до +120°C.
+										</li>
+									</ul>
+									<a href="#" class="product__doc" download>
+										Скачать инструкцию
+									</a>
+								</div>
+							</div>
+							<div id="tab-2" role="tabpanel" aria-labelledby="tab2" class="accordion-tabs__panel js-tabs-panel">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-2" aria-expanded="false" tabindex="0">
+									<span>Эксплуатация</span>
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="accordion-tabs__content content" aria-hidden="true">
+									<div class="accordion-tabs__text">
+										<p>
+											Насосы серии MS из нержавеющей стали подходят для
+											промышленных технологических систем, систем промывки,
+											перекачки кислот и щелочей, систем фильтрации,
+											повышения давления воды, очистки воды, ирригации,
+											систем противопожарной защиты, пищевой
+											промышленности и т.п.
+										</p>
+									</div>
+									<div class="product-tabs__wrap">
+										<div class="product-tabs__subtitle">
+											<span>Эксплуатационные ограничения</span>
+											<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<ul class="product__list list-reset">
+											<li>
+												Температура жидкости от -10°C до +40°C
+											</li>
+											<li>
+												Температура воздуха от -10°C до +40°C
+											</li>
+											<li>
+												Максимальное рабочее давление – 25 бар
+											</li>
+											<li>
+												Непрерывный режим работы S1
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="tab-3" role="tabpanel" aria-labelledby="tab3" class="accordion-tabs__panel js-tabs-panel">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-3" aria-expanded="false" tabindex="0">
+									<span>Технические характеристики</span>
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="accordion-tabs__content content" aria-hidden="true">
+									test
+								</div>
+							</div>
+							<div id="tab-4" role="tabpanel" aria-labelledby="tab4" class="accordion-tabs__panel js-tabs-panel">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-4" aria-expanded="false" tabindex="0">
+									<span>Кривая производительности</span>
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="accordion-tabs__content content" aria-hidden="true">
+									<div class="accordion-tabs__img">
+										<picture>
+											<source srcset="images/product/curve.webp 1x, images/product/curve@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/product/curve.png 1x, images/product/curve@2x.png 1.3x" type="image/jpg">
+											<img src="images/product/curve.png" width="912" height="1124" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div id="tab-5" role="tabpanel" aria-labelledby="tab5" class="accordion-tabs__panel js-tabs-panel">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-5" aria-expanded="false" tabindex="0">
+									<span>Используемые материалы</span>
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="accordion-tabs__content content" aria-hidden="true">
+									<div class="accordion-tabs__img">
+										<picture>
+											<source srcset="images/product/material.webp 1x, images/product/material@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/product/material.png 1x, images/product/material@2x.png 1.3x" type="image/jpg">
+											<img src="images/product/material.png" width="912" height="788" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div id="tab-6" role="tabpanel" aria-labelledby="tab6" class="accordion-tabs__panel js-tabs-panel">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-6" aria-expanded="false" tabindex="0">
+									<span>Маркировка</span>
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="accordion-tabs__content content" aria-hidden="true">
+									<div class="accordion-tabs__img">
+										<picture>
+											<source srcset="images/product/marking.webp 1x, images/product/marking@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/product/marking.png 1x, images/product/marking@2x.png 1.3x" type="image/jpg">
+											<img src="images/product/marking.png" width="392" height="299" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<section class="feedback">
+			<section class="feedback" id="feedback">
 				<div class="container">
 					<div class="feedback__wrapper">
 						<div class="feedback__left">
@@ -565,6 +854,7 @@
 	<script src="js/app.min.js"></script>
 
 	<script src="js/slider.min.js"></script>
+	<script src="js/glightbox.min.js"></script>
 
 </body>
 

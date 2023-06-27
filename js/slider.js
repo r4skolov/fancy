@@ -11100,7 +11100,55 @@ function sliderHero(el) {
   progressBar.style.setProperty('--slider-delay', `${swiper.params.autoplay.delay + swiper.params.speed}ms`);
   return swiper;
 }
+function sliderProduct(el) {
+  if (!el) {
+    return false;
+  }
+  const sliderProduct = el.querySelector('.swiper--product');
+  const sliderNav = el.querySelector('.swiper--nav');
+  const sliderPrev = el.querySelector('.swiper-button-prev');
+  const sliderNext = el.querySelector('.swiper-button-next');
+  const pagination = el.querySelector('.swiper-pagination');
+  const sliderOptionsNav = {
+    modules: [freeMode],
+    loop: false,
+    slidesPerView: 'auto',
+    freeMode: true,
+    watchSlidesProgress: true
+  };
+  const swiper2 = new core(sliderNav, sliderOptionsNav);
+  const sliderOptions = {
+    modules: [Navigation, EffectFade, Pagination, Autoplay, Thumb],
+    loop: false,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: sliderNext,
+      prevEl: sliderPrev
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: pagination,
+      type: 'bullets',
+      clickable: true,
+      dynamicBullets: false
+    },
+    thumbs: {
+      swiper: swiper2
+    }
+  };
+  const swiper = new core(sliderProduct, sliderOptions);
+  return swiper;
+}
 function init() {
+  const sliderProduc = document.querySelectorAll('[data-slider="product-slider"]');
+  sliderProduc.forEach(item => sliderProduct(item, {
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  }));
   const sliderHeroProd = document.querySelectorAll('[data-slider="hero-slider"]');
   sliderHeroProd.forEach(item => sliderHero(item));
   const sliderPopular = document.querySelectorAll('[data-slider="popular-slider"]');
