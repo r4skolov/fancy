@@ -511,7 +511,7 @@
 										Мы работаем на рынке уже больше 25 лет и имеем обширную базу дилеров по всей России
 									</p>
 								</div>
-								<a href="map.html" class="b-btn b-btn--pink">
+								<a href="dealers-list.html" class="b-btn b-btn--pink">
 									Ознакомиться со списком дилеров
 								</a>
 							</div>
@@ -539,7 +539,7 @@
 							</div>
 							<a href="representation.html" class="dealer-rebay__link link">
 								<span>Подробнее о компании</span>
-								<span class="arrow right">
+								<span class="arrow right"></span>
 							</a>
 						</div>
 						<div class="dealer-rebay__img">
@@ -580,7 +580,7 @@
 									</p>
 								</div>
 							</div>
-							<form action="#" class="form form--feedback" id="feedback">
+							<form action="#" class="form form--feedback" id="feedback-form">
 								<div class="form__row">
 									<div class="form__wrap">
 										<div class="form__group">
@@ -595,6 +595,7 @@
 											<label for="form-phone" class="form__label">
 												<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone">
 												<span class="form__name">Телефон</span>
+												<span class="form__name form__name--error">Номер введен не корректно</span>
 											</label>
 										</div>
 
@@ -602,16 +603,18 @@
 									<div class="form__wrap">
 										<div class="form__group">
 											<label for="form-email" class="form__label">
-												<input name="form-email" type="text" class="form__input" placeholder="none" id="form-email">
+												<input name="form-email" type="text" class="form__input" placeholder="Email" id="form-email">
 												<span class="form__name">Email</span>
+												<span class="form__name form__name--error">Email введен не корректно</span>
 											</label>
 										</div>
 									</div>
 									<div class="form__wrap">
-										<div class="form__group">
+										<div class="form__group form__group--error">
 											<label for="form-company" class="form__label">
 												<input name="form-company" type="text" class="form__input" placeholder="Компания" id="form-company">
 												<span class="form__name">Компания</span>
+												<span class="form__name form__name--error">Поле должно быть заполнено</span>
 											</label>
 										</div>
 

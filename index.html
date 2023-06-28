@@ -497,8 +497,8 @@
 								</h3>
 								<div class="destination-item__icon">
 									<picture>
-										<source srcset="images/home/destination/destination-1-icon.webp 1x">
-										<source srcset="images/home/destination/destination-1-icon.png 1x">
+										<source srcset="images/home/destination/destination-1-icon.webp 1x" type="image/webp">
+										<source srcset="images/home/destination/destination-1-icon.png 1x" type="image/png">
 										<img src="images/home/destination/destination-1-icon.png" width="40" height="88" alt="">
 									</picture>
 								</div>
@@ -512,8 +512,8 @@
 								</h3>
 								<div class="destination-item__icon">
 									<picture>
-										<source srcset="images/home/destination/destination-2-icon.webp 1x">
-										<source srcset="images/home/destination/destination-2-icon.png 1x">
+										<source srcset="images/home/destination/destination-2-icon.webp 1x" type="image/webp">
+										<source srcset="images/home/destination/destination-2-icon.png 1x" type="image/png">
 										<img src="images/home/destination/destination-2-icon.png" width="52" height="90" alt="">
 									</picture>
 								</div>
@@ -528,8 +528,8 @@
 								</h3>
 								<div class="destination-item__icon">
 									<picture>
-										<source srcset="images/home/destination/destination-3-icon.webp 1x">
-										<source srcset="images/home/destination/destination-3-icon.png 1x">
+										<source srcset="images/home/destination/destination-3-icon.webp 1x" type="image/webp">
+										<source srcset="images/home/destination/destination-3-icon.png 1x" type="image/png">
 										<img src="images/home/destination/destination-3-icon.png" width="84" height="57" alt="">
 									</picture>
 								</div>
@@ -543,8 +543,8 @@
 								</h3>
 								<div class="destination-item__icon">
 									<picture>
-										<source srcset="images/home/destination/destination-4-icon.webp 1x">
-										<source srcset="images/home/destination/destination-4-icon.png 1x">
+										<source srcset="images/home/destination/destination-4-icon.webp 1x" type="image/webp">
+										<source srcset="images/home/destination/destination-4-icon.png 1x" type="image/png">
 										<img src="images/home/destination/destination-4-icon.png" width="92" height="51" alt="">
 									</picture>
 								</div>
@@ -738,7 +738,7 @@
 							</div>
 							<a href="#" class="rebay__link link">
 								<span>Подробнее о компании</span>
-								<span class="arrow right">
+								<span class="arrow right"></span>
 							</a>
 						</div>
 						<div class="rebay__img rebay__img--small">
@@ -965,6 +965,7 @@
 						</div>
 
 					</div>
+				</div>
 			</section>
 
 			<section class="feedback" id="feedback">
@@ -981,7 +982,7 @@
 									</p>
 								</div>
 							</div>
-							<form action="#" class="form form--feedback" id="feedback">
+							<form action="#" class="form form--feedback" id="feedback-form">
 								<div class="form__row">
 									<div class="form__wrap">
 										<div class="form__group">
@@ -996,6 +997,7 @@
 											<label for="form-phone" class="form__label">
 												<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone">
 												<span class="form__name">Телефон</span>
+												<span class="form__name form__name--error">Номер введен не корректно</span>
 											</label>
 										</div>
 
@@ -1003,16 +1005,18 @@
 									<div class="form__wrap">
 										<div class="form__group">
 											<label for="form-email" class="form__label">
-												<input name="form-email" type="text" class="form__input" placeholder="none" id="form-email">
+												<input name="form-email" type="text" class="form__input" placeholder="Email" id="form-email">
 												<span class="form__name">Email</span>
+												<span class="form__name form__name--error">Email введен не корректно</span>
 											</label>
 										</div>
 									</div>
 									<div class="form__wrap">
-										<div class="form__group">
+										<div class="form__group form__group--error">
 											<label for="form-company" class="form__label">
 												<input name="form-company" type="text" class="form__input" placeholder="Компания" id="form-company">
 												<span class="form__name">Компания</span>
+												<span class="form__name form__name--error">Поле должно быть заполнено</span>
 											</label>
 										</div>
 

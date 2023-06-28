@@ -5429,7 +5429,57 @@ const smoothScroll = () => {
   scrollTo();
 };
 /* harmony default export */ const smoothscroll = (smoothScroll);
+;// CONCATENATED MODULE: ./source/js/components/map.js
+const map = () => {
+  const ctiy = document.querySelectorAll('.js-map-item');
+  const dealersItems = document.querySelectorAll('.dealers-list__wrap');
+  const dropdown = document?.querySelector('.dealers-dropdown__head');
+  const dropdownBtn = dropdown?.querySelector('.dealers-dropdown__text');
+  const dropdownItem = dropdown?.querySelectorAll('.dealers-dropdown__item');
+  const dropdownSelected = dropdown?.querySelector('.dealers-dropdown__selected');
+  function openCity(el) {
+    const btnTarget = el.currentTarget;
+    const {
+      city
+    } = btnTarget.dataset;
+    dealersItems.forEach(el => {
+      el.classList.remove('active');
+    });
+    ctiy.forEach(el => {
+      el.classList.remove('active');
+    });
+    document.querySelector(`#${city}`).classList.add('active');
+    btnTarget.classList.add('active');
+    const cityList = document.querySelectorAll(`.js-map-item[data-city="${city}"]`);
+    cityList.forEach(el => {
+      if (el !== btnTarget && el.dataset.city === btnTarget.dataset.city) {
+        dropdownSelected.innerHTML = el.textContent;
+      }
+      el.classList.add('active');
+    });
+  }
+  ctiy.forEach(el => {
+    el.addEventListener('click', openCity);
+  });
+  if (dropdownBtn) {
+    dropdownBtn.addEventListener('click', () => dropdown.classList.toggle('active'));
+    dropdownItem.forEach(el => {
+      el.addEventListener('click', () => {
+        const selectedOption = el.querySelector('.js-map-item').innerHTML;
+        dropdownSelected.innerHTML = selectedOption;
+        dropdown.classList.remove('active');
+      });
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.dealers-dropdown')) {
+        dropdown?.classList.remove('active');
+      }
+    });
+  }
+};
+/* harmony default export */ const components_map = (map);
 ;// CONCATENATED MODULE: ./source/js/index.js
+
 
 
 
@@ -5446,57 +5496,11 @@ function init() {
   components_tabs();
   tabstoacord();
   smoothscroll();
+  components_map();
   tippy_esm('[data-tippy-content]', {
-    arrow: false
+    arrow: false,
+    placement: 'top'
   });
-  function map() {
-    const ctiy = document.querySelectorAll('.js-map-item');
-    const dealersItems = document.querySelectorAll('.dealers-list__wrap');
-    const dropdown = document?.querySelector('.dealers-dropdown__head');
-    const dropdownBtn = dropdown?.querySelector('.dealers-dropdown__text');
-    const dropdownItem = dropdown?.querySelectorAll('.dealers-dropdown__item');
-    const dropdownSelected = dropdown?.querySelector('.dealers-dropdown__selected');
-    function openCity(el) {
-      const btnTarget = el.currentTarget;
-      const {
-        city
-      } = btnTarget.dataset;
-      dealersItems.forEach(el => {
-        el.classList.remove('active');
-      });
-      ctiy.forEach(el => {
-        el.classList.remove('active');
-      });
-      document.querySelector(`#${city}`).classList.add('active');
-      btnTarget.classList.add('active');
-      const cityList = document.querySelectorAll(`.js-map-item[data-city="${city}"]`);
-      cityList.forEach(el => {
-        if (el !== btnTarget && el.dataset.city === btnTarget.dataset.city) {
-          dropdownSelected.innerHTML = el.textContent;
-        }
-        el.classList.add('active');
-      });
-    }
-    ctiy.forEach(el => {
-      el.addEventListener('click', openCity);
-    });
-    if (dropdownBtn) {
-      dropdownBtn.addEventListener('click', () => dropdown.classList.toggle('active'));
-      dropdownItem.forEach(el => {
-        el.addEventListener('click', () => {
-          const selectedOption = el.querySelector('.js-map-item').innerHTML;
-          dropdownSelected.innerHTML = selectedOption;
-          dropdown.classList.remove('active');
-        });
-      });
-    }
-    document.addEventListener('click', e => {
-      if (!e.target.closest('.dealers-dropdown')) {
-        dropdown.classList.remove('active');
-      }
-    });
-  }
-  map();
 }
 (function () {
   init();

@@ -474,7 +474,7 @@
 									Арт. SP61353
 								</div>
 							</div>
-							<a href="#" class="product__btn b-btn b-btn--pink">Оставить заявку</a>
+							<a href="#feedback" class="product__btn b-btn b-btn--pink js-smooth-scroll">Оставить заявку</a>
 							<div class="product__guarantee">Гарантия на оборудование 24 месяца</div>
 						</div>
 					</div>
@@ -503,7 +503,7 @@
 								</ul>
 							</div>
 							<div id="tab-1" role="tabpanel" aria-labelledby="tab1" class="accordion-tabs__panel js-tabs-panel" tabindex="0">
-								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-1" aria-expanded="true" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-1" role="button" aria-expanded="true" tabindex="0">
 									<span>Описание</span>
 									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -552,7 +552,7 @@
 								</div>
 							</div>
 							<div id="tab-2" role="tabpanel" aria-labelledby="tab2" class="accordion-tabs__panel js-tabs-panel">
-								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-2" aria-expanded="false" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab2" role="button" aria-expanded="false" tabindex="0">
 									<span>Эксплуатация</span>
 									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -594,7 +594,7 @@
 								</div>
 							</div>
 							<div id="tab-3" role="tabpanel" aria-labelledby="tab3" class="accordion-tabs__panel js-tabs-panel">
-								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-3" aria-expanded="false" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-3" role="button" aria-expanded="false" tabindex="0">
 									<span>Технические характеристики</span>
 									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -605,7 +605,7 @@
 								</div>
 							</div>
 							<div id="tab-4" role="tabpanel" aria-labelledby="tab4" class="accordion-tabs__panel js-tabs-panel">
-								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-4" aria-expanded="false" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-4" role="button" aria-expanded="false" tabindex="0">
 									<span>Кривая производительности</span>
 									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -622,7 +622,7 @@
 								</div>
 							</div>
 							<div id="tab-5" role="tabpanel" aria-labelledby="tab5" class="accordion-tabs__panel js-tabs-panel">
-								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-5" aria-expanded="false" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-5" role="button" aria-expanded="false" tabindex="0">
 									<span>Используемые материалы</span>
 									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -639,7 +639,7 @@
 								</div>
 							</div>
 							<div id="tab-6" role="tabpanel" aria-labelledby="tab6" class="accordion-tabs__panel js-tabs-panel">
-								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-6" aria-expanded="false" tabindex="0">
+								<div class="accordion-tabs__btn js-accordion-trigger" aria-controls="tab-6" role="button" aria-expanded="false" tabindex="0">
 									<span>Маркировка</span>
 									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 6L8 9L5 6" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
@@ -674,7 +674,7 @@
 									</p>
 								</div>
 							</div>
-							<form action="#" class="form form--feedback" id="feedback">
+							<form action="#" class="form form--feedback" id="feedback-form">
 								<div class="form__row">
 									<div class="form__wrap">
 										<div class="form__group">
@@ -689,6 +689,7 @@
 											<label for="form-phone" class="form__label">
 												<input name="form-phone" type="text" class="form__input" placeholder="Телефон" id="form-phone">
 												<span class="form__name">Телефон</span>
+												<span class="form__name form__name--error">Номер введен не корректно</span>
 											</label>
 										</div>
 
@@ -696,16 +697,18 @@
 									<div class="form__wrap">
 										<div class="form__group">
 											<label for="form-email" class="form__label">
-												<input name="form-email" type="text" class="form__input" placeholder="none" id="form-email">
+												<input name="form-email" type="text" class="form__input" placeholder="Email" id="form-email">
 												<span class="form__name">Email</span>
+												<span class="form__name form__name--error">Email введен не корректно</span>
 											</label>
 										</div>
 									</div>
 									<div class="form__wrap">
-										<div class="form__group">
+										<div class="form__group form__group--error">
 											<label for="form-company" class="form__label">
 												<input name="form-company" type="text" class="form__input" placeholder="Компания" id="form-company">
 												<span class="form__name">Компания</span>
+												<span class="form__name form__name--error">Поле должно быть заполнено</span>
 											</label>
 										</div>
 
