@@ -82,6 +82,23 @@ const lightbox = glightbox__WEBPACK_IMPORTED_MODULE_0___default()({
   loop: false,
   openEffect: 'zoom',
   closeEffect: 'fade',
+  selector: '.glightbox2',
+  cssEfects: {
+    fade: {
+      in: 'fadeIn',
+      out: 'fadeOut'
+    },
+    zoom: {
+      in: 'zoomIn',
+      out: 'zoomOut'
+    }
+  }
+});
+const lightboxSingle = glightbox__WEBPACK_IMPORTED_MODULE_0___default()({
+  loop: false,
+  openEffect: 'zoom',
+  closeEffect: 'fade',
+  selector: '.glightbox',
   cssEfects: {
     fade: {
       in: 'fadeIn',
