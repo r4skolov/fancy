@@ -5293,54 +5293,64 @@ const inputAnimate = () => {
 ;// CONCATENATED MODULE: ./source/js/components/burger.js
 
 const burger = () => {
-  const burgerEl = document?.querySelector('[data-burger]');
-  const menu = document?.querySelector('[data-menu]');
+  const burgerEl = document.querySelector('[data-burger]');
+  const menu = document.querySelector('[data-menu]');
   const targetElement = document.querySelector('body');
-  const close = document?.querySelector('[data-close]');
+  const close = document.querySelector('[data-close]');
+  let pagePosition = 0;
   function disableScroll() {
-    const pagePosition = window.scrollY;
+    pagePosition = window.scrollY;
     document.body.classList.add('scroll');
-    document.body.dataset.position = pagePosition;
+    document.body.style.top = `${-pagePosition}px`;
   }
   function enableScroll() {
     document.body.classList.remove('scroll');
-    document.body.removeAttribute('data-position');
+    window.scrollY = pagePosition;
+    document.body.style.top = '';
   }
-  const mediaQueryTablet = window.matchMedia('(max-width: 1280px)');
-  if (mediaQueryTablet.matches) {
-    burgerEl?.addEventListener('click', () => {
-      burgerEl?.classList.toggle('burger--active');
-      menu?.classList.toggle('active');
-    });
-  }
-  const mediaQuery = window.matchMedia('(max-width: 744px)');
-  if (mediaQuery.matches) {
-    burgerEl?.addEventListener('click', () => {
-      burgerEl?.classList.add('burger--active');
-      menu?.classList.add('active');
-      // disableBodyScroll(targetElement);
+  burgerEl.addEventListener('click', () => {
+    burgerEl.classList.toggle('burger--active');
+    menu.classList.toggle('active');
+    if (menu.classList.contains('active')) {
       disableScroll();
-    });
-    close?.addEventListener('click', () => {
-      menu?.classList.remove('active');
-      // enableBodyScroll(targetElement);
+    } else {
       enableScroll();
+    }
+  });
+  close.addEventListener('click', () => {
+    menu.classList.remove('active');
+    enableScroll();
+  });
+  const navLinks = document.querySelectorAll('.nav__item .nav__link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      const self = e.currentTarget;
+      const parent = self.parentElement;
+      const content = parent.querySelector('.nav__submenu');
+      parent.classList.toggle('open');
+      if (parent.classList.contains('open')) {
+        content.style.maxHeight = `${content.scrollHeight}px`;
+      } else {
+        content.style.maxHeight = null;
+      }
     });
-    const dropDown = document.querySelectorAll('.nav__item');
-    dropDown.forEach(el => {
-      el.addEventListener('click', e => {
-        const self = e.currentTarget;
-        const control = self.querySelector('.nav__link');
-        const content = self?.querySelector('.nav__submenu');
-        self.classList.toggle('open');
-        if (self.classList.contains('open')) {
-          content.style.maxHeight = `${content.scrollHeight}px`;
-        } else {
-          content.style.maxHeight = null;
-        }
-      });
-    });
-  }
+  });
+  const mediaQuery = window.matchMedia('(max-width: 1280px)');
+  const mediaQueryTablet = window.matchMedia('(max-width: 744px)');
+  mediaQueryTablet.addEventListener('change', () => {
+    if (mediaQueryTablet.matches) {
+      // Tablet view
+    } else {
+      // Desktop view
+    }
+  });
+  mediaQuery.addEventListener('change', () => {
+    if (mediaQuery.matches) {
+      // Mobile view
+    } else {
+      // Tablet/Desktop view
+    }
+  });
   const appHeight = () => {
     const doc = document.documentElement;
     doc.style.setProperty('--app-height', `${window.innerHeight}px`);
